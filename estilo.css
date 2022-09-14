@@ -14,6 +14,14 @@ main{
     line-height: 150px;
 }
 
+.cell.x::before
+.cell.x::after{
+    content: "";
+    height: 100px;
+    width: 100px;
+    background: white;
+}
+
 .casa:hover{
     background-color: grey;
     transition: 00.6s;
@@ -43,10 +51,6 @@ body{
     color: white;
 }
 
-@keyframes ganhador{
-
-}
-
 #ganhador{
     align-items: center;
     font-size: 34.5px;
@@ -64,4 +68,28 @@ button{
 button:hover{
     background-color: grey;
     transition: 0.6s;
+}
+
+th, td, form{
+    color: white;
+    border: 3px solid white;
+
+}
+
+.skew {
+    border: 1px solid white;
+    transform: skew(30deg);
+    height: 1000;
+}
+
+@keyframes skew {
+    0%{
+        left:-60px;
+    }
+    50%{
+        right:25px;
+    }
+    100%{
+        right:55px;
+    }    
 }

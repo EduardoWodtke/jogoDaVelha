@@ -13,19 +13,19 @@
     </div>
     <main>
         <div class="linha">
-            <div id="casa01" class="casa" onclick="jogada(this);"></div>
-            <div id="casa02" class="casa" onclick="jogada(this);"></div>
-            <div id="casa03" class="casa" onclick="jogada(this);"></div>
+            <div id="casa01" class="casa x" onclick="jogada(this);" data-cell=""></div>
+            <div id="casa02" class="casa circle" onclick="jogada(this);" data-cell></div>
+            <div id="casa03" class="casa" onclick="jogada(this);" data-cell></div>
         </div>
         <div class="linha">
-            <div id="casa04" class="casa" onclick="jogada(this);"></div>
-            <div id="casa05" class="casa" onclick="jogada(this);"></div>
-            <div id="casa06" class="casa" onclick="jogada(this);"></div>
+            <div id="casa04" class="casa" onclick="jogada(this);" data-cell></div>
+            <div id="casa05" class="casa" onclick="jogada(this);" data-cell></div>
+            <div id="casa06" class="casa" onclick="jogada(this);" data-cell></div>
         </div>
         <div class="linha">
-            <div id="casa07" class="casa" onclick="jogada(this);"></div>
-            <div id="casa08" class="casa" onclick="jogada(this);"></div>
-            <div id="casa09" class="casa" onclick="jogada(this);"></div>
+            <div id="casa07" class="casa" onclick="jogada(this);" data-cell></div>
+            <div id="casa08" class="casa" onclick="jogada(this);" data-cell></div>
+            <div id="casa09" class="casa" onclick="jogada(this);" data-cell></div>
         </div>
     </main>
     <div id="Placar">
@@ -34,12 +34,13 @@
         <th>O</th>
     </form>
     <form>
-        <td id="X"></td>
-        <td id="O"></td>
+        <td id="X">0</td>
+        <td id="O">0</td>
     </form>
     </div>
     <div id="ganhador"></div>
     <button onclick="reinicia()">Jogar novamente</button>
+    <div class="skew"></div>
     <script src="index.js"></script>
 </body>
 </html>

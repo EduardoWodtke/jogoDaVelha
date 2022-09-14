@@ -39,11 +39,11 @@ function verifica_ganhador() {
         document.getElementById("ganhador").innerHTML = `Ganhador foi: ${casa04.innerHTML}`
     } else if (casa07.innerHTML != "" && casa07.innerHTML === casa08.innerHTML && casa07.innerHTML === casa09.innerHTML) {
         document.getElementById("ganhador").innerHTML = `Ganhador foi: ${casa07.innerHTML}`
-    } else if (casa01.innerHTML != "" && casa01.innerHTML === casa03.innerHTML && casa01.innerHTML === casa07.innerHTML) {
+    } else if (casa01.innerHTML != "" && casa01.innerHTML === casa04.innerHTML && casa01.innerHTML === casa07.innerHTML) {
         document.getElementById("ganhador").innerHTML = `Ganhador foi: ${casa01.innerHTML}`
-    } else if (casa02.innerHTML != "" && casa02.innerHTML === casa04.innerHTML && casa02.innerHTML === casa08.innerHTML) {
+    } else if (casa02.innerHTML != "" && casa02.innerHTML === casa05.innerHTML && casa02.innerHTML === casa08.innerHTML) {
         document.getElementById("ganhador").innerHTML = `Ganhador foi: ${casa02.innerHTML}`
-    } else if (casa03.innerHTML != "" && casa03.innerHTML === casa05.innerHTML && casa03.innerHTML === casa09.innerHTML) {
+    } else if (casa03.innerHTML != "" && casa03.innerHTML === casa06.innerHTML && casa03.innerHTML === casa09.innerHTML) {
         document.getElementById("ganhador").innerHTML = `Ganhador foi: ${casa03.innerHTML}`
     } else if (casa01.innerHTML != "" && casa01.innerHTML === casa05.innerHTML && casa01.innerHTML === casa09.innerHTML) {
         document.getElementById("ganhador").innerHTML = `Ganhador foi: ${casa01.innerHTML}`
@@ -73,6 +73,7 @@ function placar(vencedor) {
     }
 
     document.getElementById("X").innerHTML = `${vit_X}`;
+    document.getElementById("O").innerHTML = `${vit_O}`;
 
     
 }
