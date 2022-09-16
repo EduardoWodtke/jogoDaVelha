@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,16 @@
     <title>Jogo da Velha</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
+    <div id="bodyV2">
     <div id="Titulo">
         <h1>Jogo da Velha<h1>
     </div>
     <main>
         <div class="linha">
-            <div id="casa01" class="casa x" onclick="jogada(this);" data-cell=""></div>
-            <div id="casa02" class="casa circle" onclick="jogada(this);" data-cell></div>
+            <div id="casa01" class="casa X" onclick="jogada(this);" data-cell></div>
+            <div id="casa02" class="casa Circle" onclick="jogada(this);" data-cell></div>
             <div id="casa03" class="casa" onclick="jogada(this);" data-cell></div>
         </div>
         <div class="linha">
@@ -29,18 +32,17 @@
         </div>
     </main>
     <div id="Placar">
-    <form>
-        <th>X</th>
-        <th>O</th>
-    </form>
-    <form>
-        <td id="X">0</td>
-        <td id="O">0</td>
-    </form>
+        <p>Placar</p>
+        <p>X: 0</p>
+        <p>O: 0</p>
     </div>
+</br>
     <div id="ganhador"></div>
-    <button onclick="reinicia()">Jogar novamente</button>
-    <div class="skew"></div>
+</div>
+    <div id="diplayDoBtn">
+        <button onclick="reinicia()" id="bnt">Jogar novamente</button>
+    </div>
     <script src="index.js"></script>
 </body>
+
 </html>

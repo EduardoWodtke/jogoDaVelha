@@ -1,7 +1,14 @@
-main{
-    border: 1px solid white;
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+#bodyV2{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
     background-color: black;
-    
+}
+main{
+    background-color: black;
 }
 
 .casa{
@@ -12,84 +19,76 @@ main{
     color: white;
     text-align: center;
     line-height: 150px;
-}
-
-.cell.x::before
-.cell.x::after{
-    content: "";
-    height: 100px;
-    width: 100px;
-    background: white;
+    box-shadow: 5px 10px 25px gray;
+    font-family: 'Bungee Spice', cursive;
 }
 
 .casa:hover{
     background-color: grey;
-    transition: 00.6s;
+    transition: 1s;
+    cursor:pointer;
 }
 .linha{
     display: grid;
     grid-template-columns: 150px 150px 150px;
+    justify-content: center;
 }
+
 body{
-    display: grid;
     justify-content: center;
     align-items: center;
     height: 90vh;
     background-color: black;
 }
 
-@keyframes linhaDoGanhador01 {
-    0%{
-
-    }
-}
 #Titulo{
     align-items: center;
     font-size: 34.5px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Bungee Spice', cursive;
     text-decoration: underline;
     color: white;
 }
 
 #ganhador{
     align-items: center;
-    font-size: 34.5px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-family:'Bungee Spice', cursive;;
     color: white;
+}
+
+#diplayDoBtn{
+    display: grid;
+    grid-template-rows: 60px;
+    justify-items: center;
+    align-items: center;
 }
 
 button{
     text-decoration: none;
+    font-size: 21px;
     border: 3px solid white;
     background-color: black;
     color: white;
+    box-shadow: 5px 10px 25px gray;
+    height: 30px;
+    width: 445px;
+    font-family: 'Bungee Spice', cursive;
 }
 
 button:hover{
     background-color: grey;
-    transition: 0.6s;
+    transition: 1s;
+    height: 50px;
+    width: 600px;
+    cursor: pointer;
+    font-size: 40px;
 }
 
-th, td, form{
+p{
+    height: 35px;
+    font-size: 30px;
     color: white;
     border: 3px solid white;
-
-}
-
-.skew {
-    border: 1px solid white;
-    transform: skew(30deg);
-    height: 1000;
-}
-
-@keyframes skew {
-    0%{
-        left:-60px;
-    }
-    50%{
-        right:25px;
-    }
-    100%{
-        right:55px;
-    }    
+    box-shadow: 5px 10px 25px gray;
+    font-family: 'Bungee Spice', cursive;
 }

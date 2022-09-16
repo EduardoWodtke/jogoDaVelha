@@ -34,25 +34,33 @@ function alterna_jogador() {
 function verifica_ganhador() {
     if (casa01.innerHTML != "" && casa01.innerHTML === casa02.innerHTML && casa01.innerHTML === casa03.innerHTML) {
         document.getElementById("ganhador").innerHTML = `Ganhador foi: ${casa01.innerHTML}`
-        placar(casa01.innerHTML);
+        Placar(casa01.innerHTML);
     } else if (casa04.innerHTML != "" && casa04.innerHTML === casa05.innerHTML && casa04.innerHTML === casa06.innerHTML) {
         document.getElementById("ganhador").innerHTML = `Ganhador foi: ${casa04.innerHTML}`
+        Placar(casa04.innerHTML);
     } else if (casa07.innerHTML != "" && casa07.innerHTML === casa08.innerHTML && casa07.innerHTML === casa09.innerHTML) {
         document.getElementById("ganhador").innerHTML = `Ganhador foi: ${casa07.innerHTML}`
+        Placar(casa07.innerHTML);
     } else if (casa01.innerHTML != "" && casa01.innerHTML === casa04.innerHTML && casa01.innerHTML === casa07.innerHTML) {
         document.getElementById("ganhador").innerHTML = `Ganhador foi: ${casa01.innerHTML}`
+        Placar(casa01.innerHTML);
     } else if (casa02.innerHTML != "" && casa02.innerHTML === casa05.innerHTML && casa02.innerHTML === casa08.innerHTML) {
         document.getElementById("ganhador").innerHTML = `Ganhador foi: ${casa02.innerHTML}`
+        Placar(casa02.innerHTML);
     } else if (casa03.innerHTML != "" && casa03.innerHTML === casa06.innerHTML && casa03.innerHTML === casa09.innerHTML) {
         document.getElementById("ganhador").innerHTML = `Ganhador foi: ${casa03.innerHTML}`
+        Placar(casa03.innerHTML);
     } else if (casa01.innerHTML != "" && casa01.innerHTML === casa05.innerHTML && casa01.innerHTML === casa09.innerHTML) {
         document.getElementById("ganhador").innerHTML = `Ganhador foi: ${casa01.innerHTML}`
+        Placar(casa01.innerHTML);
     } else if (casa03.innerHTML != "" && casa03.innerHTML === casa05.innerHTML && casa03.innerHTML === casa07.innerHTML) {
         document.getElementById("ganhador").innerHTML = `Ganhador foi: ${casa03.innerHTML}`
+        Placar(casa03.innerHTML);
     }
 }
 
 function reinicia(){
+    jogador = prompt("Quem inicia X ou O ?").toUpperCase();
     casa01.innerHTML = "";
     casa02.innerHTML = "";
     casa03.innerHTML = "";
@@ -63,17 +71,13 @@ function reinicia(){
     casa08.innerHTML = "";
     casa09.innerHTML = "";
     document.getElementById("ganhador").innerHTML = "";
-    jogador = "X";
 }
-function placar(vencedor) {
+function Placar(vencedor) {
     if (vencedor === "X"){
         vit_X = vit_X + 1;
     }else{
         vit_O = vit_O + 1;
     }
 
-    document.getElementById("X").innerHTML = `${vit_X}`;
-    document.getElementById("O").innerHTML = `${vit_O}`;
-
-    
+    document.getElementById("Placar").innerHTML = `<p>Placar</p> <p>X: ${vit_X}</p> <p>O: ${vit_O}</p>`;
 }
